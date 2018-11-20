@@ -360,9 +360,9 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`
 			<html>
-			<head><title>OpenVPN Exporter</title></head>
+			<head><title>OpenVPN Status Exporter</title></head>
 			<body>
-			<h1>OpenVPN Exporter</h1>
+			<h1>OpenVPN Status Exporter</h1>
 			<p><a href='` + *metricsPath + `'>Metrics</a></p>
 			</body>
 			</html>`))
